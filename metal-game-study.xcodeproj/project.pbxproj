@@ -1,0 +1,560 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9CA8C3B71FEE67DD0068A9F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8C3B61FEE67DD0068A9F5 /* AppDelegate.m */; };
+		9CA8C3BA1FEE67DD0068A9F5 /* Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8C3B91FEE67DD0068A9F5 /* Renderer.m */; };
+		9CA8C3BD1FEE67DD0068A9F5 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8C3BC1FEE67DD0068A9F5 /* GameViewController.m */; };
+		9CA8C3BF1FEE67DD0068A9F5 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8C3BE1FEE67DD0068A9F5 /* Shaders.metal */; };
+		9CA8C3C21FEE67DD0068A9F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA8C3C11FEE67DD0068A9F5 /* Assets.xcassets */; };
+		9CA8C3C51FEE67DD0068A9F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA8C3C31FEE67DD0068A9F5 /* Main.storyboard */; };
+		9CA8C3C81FEE67DD0068A9F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8C3C71FEE67DD0068A9F5 /* main.m */; };
+		9CA8C3D31FEE67DD0068A9F5 /* metal_game_studyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8C3D21FEE67DD0068A9F5 /* metal_game_studyTests.m */; };
+		9CA8C3DE1FEE67DD0068A9F5 /* metal_game_studyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA8C3DD1FEE67DD0068A9F5 /* metal_game_studyUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9CA8C3CF1FEE67DD0068A9F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CA8C3AA1FEE67DD0068A9F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CA8C3B11FEE67DD0068A9F5;
+			remoteInfo = "metal-game-study";
+		};
+		9CA8C3DA1FEE67DD0068A9F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CA8C3AA1FEE67DD0068A9F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CA8C3B11FEE67DD0068A9F5;
+			remoteInfo = "metal-game-study";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9CA8C3B21FEE67DD0068A9F5 /* metal-game-study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "metal-game-study.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CA8C3B51FEE67DD0068A9F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9CA8C3B61FEE67DD0068A9F5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9CA8C3B81FEE67DD0068A9F5 /* Renderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Renderer.h; sourceTree = "<group>"; };
+		9CA8C3B91FEE67DD0068A9F5 /* Renderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Renderer.m; sourceTree = "<group>"; };
+		9CA8C3BB1FEE67DD0068A9F5 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		9CA8C3BC1FEE67DD0068A9F5 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		9CA8C3BE1FEE67DD0068A9F5 /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		9CA8C3C01FEE67DD0068A9F5 /* ShaderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderTypes.h; sourceTree = "<group>"; };
+		9CA8C3C11FEE67DD0068A9F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9CA8C3C41FEE67DD0068A9F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9CA8C3C61FEE67DD0068A9F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CA8C3C71FEE67DD0068A9F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9CA8C3C91FEE67DD0068A9F5 /* metal_game_study.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = metal_game_study.entitlements; sourceTree = "<group>"; };
+		9CA8C3CE1FEE67DD0068A9F5 /* metal-game-studyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "metal-game-studyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CA8C3D21FEE67DD0068A9F5 /* metal_game_studyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = metal_game_studyTests.m; sourceTree = "<group>"; };
+		9CA8C3D41FEE67DD0068A9F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CA8C3D91FEE67DD0068A9F5 /* metal-game-studyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "metal-game-studyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CA8C3DD1FEE67DD0068A9F5 /* metal_game_studyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = metal_game_studyUITests.m; sourceTree = "<group>"; };
+		9CA8C3DF1FEE67DD0068A9F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CA8C3AF1FEE67DD0068A9F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA8C3CB1FEE67DD0068A9F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA8C3D61FEE67DD0068A9F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9CA8C3A91FEE67DD0068A9F5 = {
+			isa = PBXGroup;
+			children = (
+				9CA8C3B41FEE67DD0068A9F5 /* metal-game-study */,
+				9CA8C3D11FEE67DD0068A9F5 /* metal-game-studyTests */,
+				9CA8C3DC1FEE67DD0068A9F5 /* metal-game-studyUITests */,
+				9CA8C3B31FEE67DD0068A9F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9CA8C3B31FEE67DD0068A9F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CA8C3B21FEE67DD0068A9F5 /* metal-game-study.app */,
+				9CA8C3CE1FEE67DD0068A9F5 /* metal-game-studyTests.xctest */,
+				9CA8C3D91FEE67DD0068A9F5 /* metal-game-studyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CA8C3B41FEE67DD0068A9F5 /* metal-game-study */ = {
+			isa = PBXGroup;
+			children = (
+				9CA8C3B51FEE67DD0068A9F5 /* AppDelegate.h */,
+				9CA8C3B61FEE67DD0068A9F5 /* AppDelegate.m */,
+				9CA8C3B81FEE67DD0068A9F5 /* Renderer.h */,
+				9CA8C3B91FEE67DD0068A9F5 /* Renderer.m */,
+				9CA8C3BB1FEE67DD0068A9F5 /* GameViewController.h */,
+				9CA8C3BC1FEE67DD0068A9F5 /* GameViewController.m */,
+				9CA8C3BE1FEE67DD0068A9F5 /* Shaders.metal */,
+				9CA8C3C01FEE67DD0068A9F5 /* ShaderTypes.h */,
+				9CA8C3C11FEE67DD0068A9F5 /* Assets.xcassets */,
+				9CA8C3C31FEE67DD0068A9F5 /* Main.storyboard */,
+				9CA8C3C61FEE67DD0068A9F5 /* Info.plist */,
+				9CA8C3C71FEE67DD0068A9F5 /* main.m */,
+				9CA8C3C91FEE67DD0068A9F5 /* metal_game_study.entitlements */,
+			);
+			path = "metal-game-study";
+			sourceTree = "<group>";
+		};
+		9CA8C3D11FEE67DD0068A9F5 /* metal-game-studyTests */ = {
+			isa = PBXGroup;
+			children = (
+				9CA8C3D21FEE67DD0068A9F5 /* metal_game_studyTests.m */,
+				9CA8C3D41FEE67DD0068A9F5 /* Info.plist */,
+			);
+			path = "metal-game-studyTests";
+			sourceTree = "<group>";
+		};
+		9CA8C3DC1FEE67DD0068A9F5 /* metal-game-studyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9CA8C3DD1FEE67DD0068A9F5 /* metal_game_studyUITests.m */,
+				9CA8C3DF1FEE67DD0068A9F5 /* Info.plist */,
+			);
+			path = "metal-game-studyUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CA8C3B11FEE67DD0068A9F5 /* metal-game-study */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CA8C3E21FEE67DD0068A9F5 /* Build configuration list for PBXNativeTarget "metal-game-study" */;
+			buildPhases = (
+				9CA8C3AE1FEE67DD0068A9F5 /* Sources */,
+				9CA8C3AF1FEE67DD0068A9F5 /* Frameworks */,
+				9CA8C3B01FEE67DD0068A9F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "metal-game-study";
+			productName = "metal-game-study";
+			productReference = 9CA8C3B21FEE67DD0068A9F5 /* metal-game-study.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9CA8C3CD1FEE67DD0068A9F5 /* metal-game-studyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CA8C3E51FEE67DD0068A9F5 /* Build configuration list for PBXNativeTarget "metal-game-studyTests" */;
+			buildPhases = (
+				9CA8C3CA1FEE67DD0068A9F5 /* Sources */,
+				9CA8C3CB1FEE67DD0068A9F5 /* Frameworks */,
+				9CA8C3CC1FEE67DD0068A9F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CA8C3D01FEE67DD0068A9F5 /* PBXTargetDependency */,
+			);
+			name = "metal-game-studyTests";
+			productName = "metal-game-studyTests";
+			productReference = 9CA8C3CE1FEE67DD0068A9F5 /* metal-game-studyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9CA8C3D81FEE67DD0068A9F5 /* metal-game-studyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CA8C3E81FEE67DD0068A9F5 /* Build configuration list for PBXNativeTarget "metal-game-studyUITests" */;
+			buildPhases = (
+				9CA8C3D51FEE67DD0068A9F5 /* Sources */,
+				9CA8C3D61FEE67DD0068A9F5 /* Frameworks */,
+				9CA8C3D71FEE67DD0068A9F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CA8C3DB1FEE67DD0068A9F5 /* PBXTargetDependency */,
+			);
+			name = "metal-game-studyUITests";
+			productName = "metal-game-studyUITests";
+			productReference = 9CA8C3D91FEE67DD0068A9F5 /* metal-game-studyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CA8C3AA1FEE67DD0068A9F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Toru Hisai";
+				TargetAttributes = {
+					9CA8C3B11FEE67DD0068A9F5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					9CA8C3CD1FEE67DD0068A9F5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9CA8C3B11FEE67DD0068A9F5;
+					};
+					9CA8C3D81FEE67DD0068A9F5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9CA8C3B11FEE67DD0068A9F5;
+					};
+				};
+			};
+			buildConfigurationList = 9CA8C3AD1FEE67DD0068A9F5 /* Build configuration list for PBXProject "metal-game-study" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9CA8C3A91FEE67DD0068A9F5;
+			productRefGroup = 9CA8C3B31FEE67DD0068A9F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CA8C3B11FEE67DD0068A9F5 /* metal-game-study */,
+				9CA8C3CD1FEE67DD0068A9F5 /* metal-game-studyTests */,
+				9CA8C3D81FEE67DD0068A9F5 /* metal-game-studyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CA8C3B01FEE67DD0068A9F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA8C3C21FEE67DD0068A9F5 /* Assets.xcassets in Resources */,
+				9CA8C3C51FEE67DD0068A9F5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA8C3CC1FEE67DD0068A9F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA8C3D71FEE67DD0068A9F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CA8C3AE1FEE67DD0068A9F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA8C3C81FEE67DD0068A9F5 /* main.m in Sources */,
+				9CA8C3BF1FEE67DD0068A9F5 /* Shaders.metal in Sources */,
+				9CA8C3BA1FEE67DD0068A9F5 /* Renderer.m in Sources */,
+				9CA8C3BD1FEE67DD0068A9F5 /* GameViewController.m in Sources */,
+				9CA8C3B71FEE67DD0068A9F5 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA8C3CA1FEE67DD0068A9F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA8C3D31FEE67DD0068A9F5 /* metal_game_studyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CA8C3D51FEE67DD0068A9F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA8C3DE1FEE67DD0068A9F5 /* metal_game_studyUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9CA8C3D01FEE67DD0068A9F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CA8C3B11FEE67DD0068A9F5 /* metal-game-study */;
+			targetProxy = 9CA8C3CF1FEE67DD0068A9F5 /* PBXContainerItemProxy */;
+		};
+		9CA8C3DB1FEE67DD0068A9F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CA8C3B11FEE67DD0068A9F5 /* metal-game-study */;
+			targetProxy = 9CA8C3DA1FEE67DD0068A9F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9CA8C3C31FEE67DD0068A9F5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CA8C3C41FEE67DD0068A9F5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9CA8C3E01FEE67DD0068A9F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9CA8C3E11FEE67DD0068A9F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9CA8C3E31FEE67DD0068A9F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "metal-game-study/metal_game_study.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BH53U2474Y;
+				INFOPLIST_FILE = "metal-game-study/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.torus.metal-game-study";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9CA8C3E41FEE67DD0068A9F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "metal-game-study/metal_game_study.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BH53U2474Y;
+				INFOPLIST_FILE = "metal-game-study/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.torus.metal-game-study";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9CA8C3E61FEE67DD0068A9F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BH53U2474Y;
+				INFOPLIST_FILE = "metal-game-studyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.torus.metal-game-studyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/metal-game-study.app/Contents/MacOS/metal-game-study";
+			};
+			name = Debug;
+		};
+		9CA8C3E71FEE67DD0068A9F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BH53U2474Y;
+				INFOPLIST_FILE = "metal-game-studyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.torus.metal-game-studyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/metal-game-study.app/Contents/MacOS/metal-game-study";
+			};
+			name = Release;
+		};
+		9CA8C3E91FEE67DD0068A9F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BH53U2474Y;
+				INFOPLIST_FILE = "metal-game-studyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.torus.metal-game-studyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "metal-game-study";
+			};
+			name = Debug;
+		};
+		9CA8C3EA1FEE67DD0068A9F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BH53U2474Y;
+				INFOPLIST_FILE = "metal-game-studyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.torus.metal-game-studyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "metal-game-study";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CA8C3AD1FEE67DD0068A9F5 /* Build configuration list for PBXProject "metal-game-study" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CA8C3E01FEE67DD0068A9F5 /* Debug */,
+				9CA8C3E11FEE67DD0068A9F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CA8C3E21FEE67DD0068A9F5 /* Build configuration list for PBXNativeTarget "metal-game-study" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CA8C3E31FEE67DD0068A9F5 /* Debug */,
+				9CA8C3E41FEE67DD0068A9F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CA8C3E51FEE67DD0068A9F5 /* Build configuration list for PBXNativeTarget "metal-game-studyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CA8C3E61FEE67DD0068A9F5 /* Debug */,
+				9CA8C3E71FEE67DD0068A9F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CA8C3E81FEE67DD0068A9F5 /* Build configuration list for PBXNativeTarget "metal-game-studyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CA8C3E91FEE67DD0068A9F5 /* Debug */,
+				9CA8C3EA1FEE67DD0068A9F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CA8C3AA1FEE67DD0068A9F5 /* Project object */;
+}
