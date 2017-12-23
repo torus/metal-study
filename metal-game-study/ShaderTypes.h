@@ -25,7 +25,8 @@ typedef NS_ENUM(NSInteger, BufferIndex)
 {
     BufferIndexMeshPositions = 0,
     BufferIndexMeshGenerics  = 1,
-    BufferIndexUniforms      = 2
+    BufferIndexUniforms      = 2,
+    BufferIndexOvalParams    = 3
 };
 
 typedef NS_ENUM(NSInteger, VertexAttribute)
@@ -41,8 +42,17 @@ typedef NS_ENUM(NSInteger, TextureIndex)
 
 typedef struct
 {
+    float width;
+    float height;
+    float x;
+    float y;
+} OvalParams;
+
+typedef struct
+{
     matrix_float4x4 projectionMatrix;
     matrix_float4x4 modelViewMatrix;
+    OvalParams ovalParams;
 } Uniforms;
 
 #endif /* ShaderTypes_h */

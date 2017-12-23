@@ -197,6 +197,11 @@ static const size_t kAlignedUniformsSize = (sizeof(Uniforms) & ~0xFF) + 0x100;
     matrix_float4x4 viewMatrix = matrix4x4_translation(0.0, 0.0, -8.0);
 
     uniforms->modelViewMatrix = matrix_multiply(viewMatrix, modelMatrix);
+    
+    uniforms->ovalParams.height = 0.4;
+    uniforms->ovalParams.width = 0.6;
+    uniforms->ovalParams.x = 0.4;
+    uniforms->ovalParams.y = 0.3;
 
     _rotation += .01;
 }

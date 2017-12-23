@@ -48,7 +48,13 @@ fragment float4 fragmentShader(ColorInOut in [[stage_in]],
                                    mag_filter::linear,
                                    min_filter::linear);
 
-    half4 colorSample   = colorMap.sample(colorSampler, in.texCoord.xy);
+//    half4 colorSample   = colorMap.sample(colorSampler, in.texCoord.xy);
+    half g = in.texCoord.xy[0];
+    half r = in.texCoord.xy[1];
+    half x = (r - uniforms.ovalParams.x) / uniforms.ovalParams.width;
+    half y = (g - uniforms.ovalParams.y) / uniforms.ovalParams.height;
+    half b = x * x + y * y < 1 ? 1 : 0;
+    half4 colorSample   = {r, g, b, 1};
 
     return float4(colorSample);
 }
