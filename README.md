@@ -10,10 +10,10 @@ uv 空間上の全ての点について、その点から曲線上の全ての�
 
 ある点から曲線の全ての点までの距離を求めると書いたけど、実際には曲線上の全ての点における接線との距離をベジェ曲線の方程式におけるパラメタ t の多項式として表し、この多項式が実根を持つかどうかを判定して色を決める。
 
+### 実装
+
 ![](https://upload.wikimedia.org/wikipedia/commons/8/89/Bézier_3_big.svg)\
 -- [Bézier curve - Wikipedia](https://en.wikipedia.org/wiki/B%C3%A9zier_curve)
-
-### 実装
 
 ベジェ曲線は全ての t について、図の点 B で線分 R<sub>0</sub>R<sub>1</sub> と接する事実を利用する。
 
@@ -53,6 +53,7 @@ n = - (lu<sub>0</sub> + mu<sub>1</sub>)
 
 となるので、上の l、m の値も使うと n は t の 4 次多項式になる。
 
+（つづく）
 
 ### 参考ページ
 
