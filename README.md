@@ -1,4 +1,4 @@
-# Drawing Filled Bezier Curve with Metal Shader
+# Drawing Filled Bézier Curve with Metal Shader
 
 ![](https://github.com/torus/metal-study/raw/master/metal-bezier.png)
 
