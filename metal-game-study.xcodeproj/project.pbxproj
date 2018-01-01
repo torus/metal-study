@@ -56,6 +56,7 @@
 		9CA8C3D91FEE67DD0068A9F5 /* metal-game-studyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "metal-game-studyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA8C3DD1FEE67DD0068A9F5 /* metal_game_studyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = metal_game_studyUITests.m; sourceTree = "<group>"; };
 		9CA8C3DF1FEE67DD0068A9F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CA8C3EB1FFA89DB0068A9F5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +87,7 @@
 		9CA8C3A91FEE67DD0068A9F5 = {
 			isa = PBXGroup;
 			children = (
+				9CA8C3EB1FFA89DB0068A9F5 /* README.md */,
 				9CA8C3B41FEE67DD0068A9F5 /* metal-game-study */,
 				9CA8C3D11FEE67DD0068A9F5 /* metal-game-studyTests */,
 				9CA8C3DC1FEE67DD0068A9F5 /* metal-game-studyUITests */,
