@@ -202,6 +202,15 @@ static const size_t kAlignedUniformsSize = (sizeof(Uniforms) & ~0xFF) + 0x100;
     uniforms->ovalParams.width = 0.6;
     uniforms->ovalParams.x = 0.4;
     uniforms->ovalParams.y = 0.3;
+    
+    uniforms->bezierParams.points[0].x = 0;
+    uniforms->bezierParams.points[0].y = 0;
+    uniforms->bezierParams.points[1].x = 1;
+    uniforms->bezierParams.points[1].y = 0.4;
+    uniforms->bezierParams.points[2].x = 0.7;
+    uniforms->bezierParams.points[2].y = 1;
+    uniforms->bezierParams.points[3].x = 0;
+    uniforms->bezierParams.points[3].y = 1;
 
     _rotation += .01;
 }

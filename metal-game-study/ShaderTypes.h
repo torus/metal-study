@@ -50,9 +50,15 @@ typedef struct
 
 typedef struct
 {
+    vector_float2 points[4];
+} BezierParams;
+
+typedef struct
+{
     matrix_float4x4 projectionMatrix;
     matrix_float4x4 modelViewMatrix;
     OvalParams ovalParams;
+    BezierParams bezierParams;
 } Uniforms;
 
 #endif /* ShaderTypes_h */
