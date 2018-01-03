@@ -87,27 +87,27 @@ fragment float4 fragmentShader(ColorInOut in [[stage_in]],
     float d = (l1 * x + m1 * y - (lu0_1 + mu1_1)) / a;
     float e = (l0 * x + m0 * y - (lu0_0 + mu1_0)) / a;
     
-    float dd = d * d;
-    float ddd = dd * d;
-    float dddd = dd * dd;
     float bb = b * b;
     float bbb = bb * b;
+    float bbbb = bb * bb;
     float cc = c * c;
     float ccc = cc * c;
     float cccc = cc * cc;
-    float bbbb = bb * bb;
+    float dd = d * d;
+    float ddd = dd * d;
+    float dddd = dd * dd;
     float ee = e * e;
     float eee = ee * e;
     
     float D = - 108 * dd + 108 * b * c * d - 27 * bbb * d - 32 * ccc + 9 * bb * cc;
     float P = - 768 * e + 192 * b * d + 128 * cc - 144 * bb * c + 27 * bbbb;
-    float Q = 384 * ee - 192 * b * d * e - 128 * cc * e + 144 * bb * c * e - 27 * bbbb * e
-    + 72 * c * dd - 3 * bb * dd - 40 * b * cc * d + 9 * bbb * c * d + 8 * cccc
-    - 2 * bb * ccc;
-    float R = - 256 * eee + 192 * b * d * ee + 128 * cc * ee - 144 * bb * c * ee
-    + 27 * bbbb * ee - 144 * c * dd * e + 6 * bb * dd * e + 80 * b * cc * d * e
-    - 18 * bbb * c * d * e -16 * cccc * e + 4 * bb * ccc * e + 27 * dddd - 18 * b * c * ddd
-    + 4 * bbb * ddd + 4 * ccc * dd - bb * cc * dd;
+    float Q = (384 * ee - 192 * b * d * e - 128 * cc * e + 144 * bb * c * e - 27 * bbbb * e
+               + 72 * c * dd - 3 * bb * dd - 40 * b * cc * d + 9 * bbb * c * d + 8 * cccc
+               - 2 * bb * ccc);
+    float R = (- 256 * eee + 192 * b * d * ee + 128 * cc * ee - 144 * bb * c * ee
+               + 27 * bbbb * ee - 144 * c * dd * e + 6 * bb * dd * e + 80 * b * cc * d * e
+               - 18 * bbb * c * d * e -16 * cccc * e + 4 * bb * ccc * e + 27 * dddd - 18 * b * c * ddd
+               + 4 * bbb * ddd + 4 * ccc * dd - bb * cc * dd);
 
     half red = 1;
     half green = R >= 0 ? 1 : 0;
