@@ -53,13 +53,13 @@ fragment float4 fragmentShader(ColorInOut in [[stage_in]],
     float2 r = uniforms.bezierParams.points[2];
     float2 s = uniforms.bezierParams.points[3];
     
-    float l2 = - p.y + 3 * q.y - 3 * r.y + s.y;
-    float l1 = 2 * p.y - 4 * q.y + 2 * r.y;
-    float l0 = - p.y + q.y;
+    float l2 = - (- p.y + 3 * q.y - 3 * r.y + s.y);
+    float l1 = - (2 * p.y - 4 * q.y + 2 * r.y);
+    float l0 = - (- p.y + q.y);
 
-    float m2 = - (- p.x + 3 * q.x - 3 * r.x + s.x);
-    float m1 = - (2 * p.x - 4 * q.x + 2 * r.x);
-    float m0 = - (- p.x + q.x);
+    float m2 = - p.x + 3 * q.x - 3 * r.x + s.x;
+    float m1 = 2 * p.x - 4 * q.x + 2 * r.x;
+    float m0 = - p.x + q.x;
 
     float u02 = - p.x - 2 * q.x + r.x;
     float u01 = - 2 * p.x + 2 * q.x;
@@ -109,9 +109,10 @@ fragment float4 fragmentShader(ColorInOut in [[stage_in]],
                - 18 * bbb * c * d * e -16 * cccc * e + 4 * bb * ccc * e + 27 * dddd - 18 * b * c * ddd
                + 4 * bbb * ddd + 4 * ccc * dd - bb * cc * dd);
 
-    half red = 1;
-    half green = R >= 0 ? 1 : 0;
-    half blue = (D >= 0 && (P >= 0 || Q <= 0)) ? 1 : 0 + x / 2;
+    bool flag = !(R >= 0) && !(D >= 0 && (P >= 0 || Q <= 0));
+    half red = flag;
+    half green = flag ? x : 1;
+    half blue = flag ? 0 : y;
     half4 colorSample   = {red, green, blue, 1};
     
     return float4(colorSample);
