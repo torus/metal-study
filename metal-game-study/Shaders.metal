@@ -65,27 +65,27 @@ fragment float4 fragmentShader(ColorInOut in [[stage_in]],
     float u01 = - 2 * p.x + 2 * q.x;
     float u00 = p.x;
     
-    float lu0_4 = l2 * u02;
-    float lu0_3 = l1 * u02 + l2 * u01;
-    float lu0_2 = l2 * u00 + l1 * u01 + l0 * u02;
-    float lu0_1 = l0 * u01 + l1 * u00;
-    float lu0_0 = l0 * u00;
+    float lu04 = l2 * u02;
+    float lu03 = l1 * u02 + l2 * u01;
+    float lu02 = l2 * u00 + l1 * u01 + l0 * u02;
+    float lu01 = l0 * u01 + l1 * u00;
+    float lu00 = l0 * u00;
 
     float u12 = - p.y - 2 * q.y + r.y;
     float u11 = - 2 * p.y + 2 * q.y;
     float u10 = p.y;
     
-    float mu1_4 = m2 * u12;
-    float mu1_3 = m1 * u12 + m2 * u11;
-    float mu1_2 = m2 * u10 + m1 * u11 + m0 * u12;
-    float mu1_1 = m0 * u11 + m1 * u10;
-    float mu1_0 = m0 * u10;
+    float mu14 = m2 * u12;
+    float mu13 = m1 * u12 + m2 * u11;
+    float mu12 = m2 * u10 + m1 * u11 + m0 * u12;
+    float mu11 = m0 * u11 + m1 * u10;
+    float mu10 = m0 * u10;
 
-    float a = - (lu0_4 + mu1_4);
-    float b = (- (lu0_3 + mu1_3)) / a;
-    float c = (l2 * x + m2 * y - (lu0_2 + mu1_2)) / a;
-    float d = (l1 * x + m1 * y - (lu0_1 + mu1_1)) / a;
-    float e = (l0 * x + m0 * y - (lu0_0 + mu1_0)) / a;
+    float a = - (lu04 + mu14);
+    float b = (- (lu03 + mu13)) / a;
+    float c = (l2 * x + m2 * y - (lu02 + mu12)) / a;
+    float d = (l1 * x + m1 * y - (lu01 + mu11)) / a;
+    float e = (l0 * x + m0 * y - (lu00 + mu10)) / a;
     
     float bb = b * b;
     float bbb = bb * b;
