@@ -193,7 +193,8 @@ static const size_t kAlignedUniformsSize = (sizeof(Uniforms) & ~0xFF) + 0x100;
     uniforms->projectionMatrix = _projectionMatrix;
 
     vector_float3 rotationAxis = {1, 1, 0};
-    matrix_float4x4 modelMatrix = matrix4x4_rotation(_rotation, rotationAxis);
+//    matrix_float4x4 modelMatrix = matrix4x4_rotation(_rotation, rotationAxis);
+    matrix_float4x4 modelMatrix = matrix4x4_rotation(0, rotationAxis);
     matrix_float4x4 viewMatrix = matrix4x4_translation(0.0, 0.0, -8.0);
 
     uniforms->modelViewMatrix = matrix_multiply(viewMatrix, modelMatrix);
@@ -206,10 +207,10 @@ static const size_t kAlignedUniformsSize = (sizeof(Uniforms) & ~0xFF) + 0x100;
     uniforms->bezierParams.points[0].x = 0;
     uniforms->bezierParams.points[0].y = 0;
     uniforms->bezierParams.points[1].x = 1;
-    uniforms->bezierParams.points[1].y = 0.4;
-    uniforms->bezierParams.points[2].x = 0.7;
-    uniforms->bezierParams.points[2].y = 1;
-    uniforms->bezierParams.points[3].x = 0;
+    uniforms->bezierParams.points[1].y = 0;
+    uniforms->bezierParams.points[2].x = sinf(_rotation) * 0.5 + 0.5;
+    uniforms->bezierParams.points[2].y = 0.5;
+    uniforms->bezierParams.points[3].x = cosf(_rotation) * 0.5 + 0.5;
     uniforms->bezierParams.points[3].y = 1;
 
     _rotation += .01;

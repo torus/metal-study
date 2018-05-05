@@ -109,10 +109,13 @@ fragment float4 fragmentShader(ColorInOut in [[stage_in]],
                - 18 * bbb * c * d * e -16 * cccc * e + 4 * bb * ccc * e + 27 * dddd - 18 * b * c * ddd
                + 4 * bbb * ddd + 4 * ccc * dd - bb * cc * dd);
 
-    bool flag = !(R >= 0) && !(D >= 0 && (P >= 0 || Q <= 0));
-    half red = flag;
-    half green = flag ? x : 1;
-    half blue = flag ? 0 : y;
+//    bool flag = !(R >= 0) && !(D >= 0 && (P >= 0 || Q <= 0));
+//    half red = flag;
+//    half green = flag ? x : 1;
+//    half blue = flag ? 0 : y;
+    half red = (R >= 0) * 0.5 + (D >= 0) * 0.5;
+    half green = P >= 0 * 0.5 + (D >= 0) * 0.5;
+    half blue = Q <= 0 * 0.5 + (D >= 0) * 0.5;
     half4 colorSample   = {red, green, blue, 1};
     
     return float4(colorSample);
