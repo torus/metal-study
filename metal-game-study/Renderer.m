@@ -210,7 +210,7 @@ static const size_t kAlignedUniformsSize = (sizeof(Uniforms) & ~0xFF) + 0x100;
     uniforms->bezierParams.points[1].y = 0;
     uniforms->bezierParams.points[2].x = sinf(_rotation) * 0.5 + 0.5;
     uniforms->bezierParams.points[2].y = 0.5;
-    uniforms->bezierParams.points[3].x = cosf(_rotation) * 0.5 + 0.5;
+    uniforms->bezierParams.points[3].x = - sinf(_rotation) * 0.5 + 0.5;
     uniforms->bezierParams.points[3].y = 1;
 
     _rotation += .01;
